@@ -7,7 +7,7 @@ logger = logging.getLogger(__name__)
 
 
 def index(request):
-    logger.info('''f"Посетитель зашёл на главную страницу: {request.user}")
+    logger.info(f"Посетитель зашёл на главную страницу: {request.user}")
     return HttpResponse(<h1>Добро пожаловать на страницу Иванова Ивана Иваныча</h1>
                         <p>Описание главной страницы...</p>''')
 
